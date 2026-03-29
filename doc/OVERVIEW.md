@@ -100,4 +100,6 @@ Along with root `.env` file, centralize...
 - TypeScript
 - Node.js
 - Notion SDK
+- Prettier
+- ESLint
 - Express (later)
