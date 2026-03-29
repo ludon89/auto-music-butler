@@ -25,3 +25,12 @@ Using Notion's webhooks and API to auto-fill some database properties and relati
 - Prettier
 - ESLint
 - Express (later)
+
+## Conventions
+
+- Follow @.prettierrc for code formatting.
+- Use @eslint.config.js rules for code linting.
+
+## Other context files for AIs
+
+- See @docs/ARCHITECTURE.md for a high-level overview of the project architecture.

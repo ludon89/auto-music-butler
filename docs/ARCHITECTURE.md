@@ -5,30 +5,34 @@ isolated in Typescript modules that know nothing about the CLI, Express, or what
 
 ```
 auto-music-butler/
-│
-├─ doc/
-│
-├─ src/
-│  ├─ core/
-│  │  ├─ notion/
-│  │  ├─ usecases/
-│  │  └─ domain/
-│  │
-│  ├─ scripts/
-│  │
-│  ├─ api/
-│  │  └─ server.ts
-│  │
-│  └─ config/
-│     └─ env.ts
-│
-├─ .gitignore
-├─ package.json
-├─ tsconfig.json
-└─ .env
+|
+|─ docs/
+|
+|─ src/
+|  |─ core/
+|  |  |─ notion/
+|  |  |─ usecases/
+|  |  |─ domain/
+|  |
+|  |─ scripts/
+|  |
+|  |─ api/
+|  |  |─ server.ts
+|  |
+|  |─ config/
+|     |─ env.ts
+|
+|─ .env
+|─ .gitignore
+|— .nvmrc
+|─ .prettierignore
+|─ .prettierrc
+|— eslint.config.js
+|─ package.json
+|─ tsconfig.json
 ```
 
-## `doc`
+## `docs`
 
 Documentation and context for AI.
 
@@ -69,7 +73,9 @@ Documentation and context for AI.
 - Database models
 - Typed representations of Notion rows
 
-## `src/scripts/` — One-off entry points
+## `src/scripts/`
+
+**One-off scripts**
 
 - Each file = one runnable script
 - Imports from core
@@ -86,5 +92,5 @@ Express lives here (later)
 Along with root `.env` file, centralize...
 
 - Environment variables
-- Things like database IDs
+- Notion IDs
 - Mode flags (dry-run, etc.)
