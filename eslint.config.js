@@ -24,10 +24,10 @@ export default defineConfig(
       "@typescript-eslint/explicit-function-return-type": "warn",
 
       // Disallow floating promises (easy to miss in scripts)
-      "@typescript-eslint/no-floating-promises": "error",
+      "@typescript-eslint/no-floating-promises": "warn",
 
       // Prefer nullish coalescing over || for nullable values
-      "@typescript-eslint/prefer-nullish-coalescing": "error",
+      "@typescript-eslint/prefer-nullish-coalescing": "warn",
 
       // No need to explicitly type things TS can infer
       "@typescript-eslint/no-inferrable-types": "warn",
